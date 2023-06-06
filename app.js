@@ -36,7 +36,6 @@ app.post("/", (req, res) => {
     lastName: lastName,
     email: email
   };
-  console.log(subscribingUser.firstName, subscribingUser.lastName, subscribingUser.email)
 
   async function run() {
     try {
@@ -49,10 +48,8 @@ app.post("/", (req, res) => {
         }
       });
 
-      console.log(`Successfully added contact as an audience member. The contact's id is ${response.id}.`)
 
       res.sendFile(__dirname + "/success.html");
-      console.log(`This user's subscription status is ${response.status}.`);
     }
     catch (e) {
       if (e.status >= 400) {
