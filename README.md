@@ -6,6 +6,7 @@
 
 This is a newsletter signup page that utilizes mailchimp to subscribe the users to the newsletter and store their name and emails. There is no newsletter attached it is just a sign up form. At this time it directs to a success page if the subscriber is new and uses a real email. If the email seems fake or the user is already subscribe at this time it will go to the same fail page.
 
+* Deployment: NO LONGER ACTIVELY DEPLOYED
 
 ## Requirements
 
